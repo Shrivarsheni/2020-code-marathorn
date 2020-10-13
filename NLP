@@ -1,0 +1,9 @@
+# printing all the tokens of a text
+raw_text= 'Amazon Alexa, also known simply as Alexa, is a virtual assistant AI technology developed by Amazon, first used in the Amazon Echo smart speakers developed by Amazon Lab126. It is capable of voice interaction, music playback, making to-do lists, setting alarms, streaming podcasts, playing audiobooks, and providing weather, traffic, sports, and other real-time information, such as news. Alexa can also control several smart devices using itself as a home automation system. Users are able to extend the Alexa capabilities by installing "skills" additional functionality developed by third-party vendors, in other settings more commonly called apps such as weather programs and audio features.Most devices with Alexa allow users to activate the device using a wake-word (such as Alexa or Amazon); other devices (such as the Amazon mobile app on iOS or Android and Amazon Dash Wand) require the user to push a button to activate Alexa listening mode, although, some phones also allow a user to say a command, such as "Alexa" or "Alexa wake". Currently, interaction and communication with Alexa are available only in English, German, French, Italian, Spanish, Portuguese, Japanese, and Hindi. In Canada, Alexa is available in English and French with the Quebec accent).(truncated...).'
+text_doc=nlp(raw_text)
+
+token_count=0
+
+for token in text_doc:
+    print(token.text)
+    token_count+=1
